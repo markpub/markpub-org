@@ -1,4 +1,4 @@
-# MarkPub - Markdown-based static site builder.
+# MarkPub - Markdown static site builder
 
 ## Hello, world.
 

@@ -1,8 +1,8 @@
 wiki_title: MarkPub
 author: Bill Anderson, Peter Kaminski
-edit_url: ''
+edit_url: https://github.com/markpub/markpub-org/edit/
 edit_branch: main
-repo: ''
+repo: <a href="https://github.com/markpub/markpub-org">markpub-org</a>
 license: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution
   4.0 International License</a>
 recent_changes_count: 5
