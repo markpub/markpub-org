@@ -9,14 +9,12 @@ These steps assume the name of the directory or folder is “myDocumentCollectio
 
 **Install `markpub`**:  
 ```shell
-cd  # to home directory
 pip install markpub
 ```
 
 **Initialize the document collection**:
 This step sets up the `markpub` configuration file and copies the HTML, CSS, and JS files needed to build a website.  
 ```shell
-cd
 markpub init /full/path/to/myDocumentCollection
 ```
 
