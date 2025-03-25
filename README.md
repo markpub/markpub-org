@@ -1,8 +1,10 @@
-# MarkPub - Static Site Generator using Markdown
+# MarkPub
 
-The markpub PyPI package builds a nice static website from a directory of Markdown files. The website supports wiki-links, transclusion, and provides full-text search.
+## A Static Site Generator using Markdown
 
-Use cases include publishing Obsidian vaults and operating [Massive Wiki](https://massivewiki.org/) sites. But you don't need anything more than a directory of Markdown files you edit with a text editor.
+The **MarkPub PyPI package** builds a static website from a directory of Markdown files. The website supports wiki-links, transclusion, and provides full-text search. MarkPub is a [static site generator](https://en.wikipedia.org/wiki/Static_site_generator).
+
+Use cases include publishing Obsidian vaults and operating [Massive Wiki](https://massivewiki.org/) sites. But you don't need anything more than a directory of Markdown files you edit with a text editor to make a nice website.
 
 For more information, see <https://pypi.org/project/markpub/>.
 
