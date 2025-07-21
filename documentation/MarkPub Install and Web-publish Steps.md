@@ -2,7 +2,7 @@
 
 MarkPub generates HTML files from Markdown files. It is a [static site generator](https://en.wikipedia.org/wiki/Static_site_generator).
 
-MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site will be regenerated automatically by GitHub or Netlify when files are updated.
+MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub or Netlify when files are updated.
 
 The following instructions yield a static website published via GitHub Pages.
 
@@ -41,7 +41,7 @@ Note: prior to initialization, the `myDocumentCollection` folder must be a local
 markpub init /full/path/to/myDocumentCollection
 ```
 
-MarkPub initialization will ask you for:  
+MarkPub initialization requests input for:  
 
 - Website title: "My Document Collection"
 - Author: "Your name or names"
@@ -83,6 +83,7 @@ Edit this file to set or change:
 Other site-wide settings include:
 
 - name of the Markdown page used as the website sidebar
+- theme: name of a directory of website HTML, CSS, and JS files to use
 - list of Markdown pages that do not have Edit buttons  
 - list of directories in the repository that will not appear on the website  
 

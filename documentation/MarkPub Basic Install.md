@@ -16,7 +16,7 @@ pip install markpub
 ```
 
 **Initialize the document collection**:
-This step sets up the `markpub` configuration file and copies the HTML, CSS, and JS files needed to build a website.  
+This step sets up the `markpub` configuration file, and installs Python and Node files, needed to build a website.  
 ```shell
 markpub init /full/path/to/myDocumentCollection
 ```
