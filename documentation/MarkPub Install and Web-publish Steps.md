@@ -87,3 +87,10 @@ Other site-wide settings include:
 - list of Markdown pages that do not have Edit buttons  
 - list of directories in the repository that will not appear on the website  
 
+### Website themes
+
+Markpub uses Jiinja2 web templates and a small CSS file when building the static website. Website themes are provided by [Markpub-Themes](https://test.pypi.org/project/markpub-themes/), a separate Python package. This allows the latest version of the default theme to be used when the website is built.
+
+Custom themes can be specified in two ways.  
+1. Adding a "theme:" key, whose value is the theme directory name, e.g. "dolce" to `.markpub/markpub.yaml`, and installing the theme files in the `.markpub/themes` directory.  
+2. Update the `build` command in `netlify.toml` or `.github/workflows/release.yml` to include the "-t" or "--theme" option.
