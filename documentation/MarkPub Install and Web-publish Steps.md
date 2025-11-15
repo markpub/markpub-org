@@ -33,6 +33,8 @@ cd /to/some/work/directory
 pip install markpub
 ```
 
+Note: initialization must be run from a directory outside the document collection directory.
+
 **Initialize the document collection**:
 
 Note: prior to initialization, the `myDocumentCollection` folder must be a local copy (“clone”) of an existing GitHub repository.
@@ -91,6 +93,12 @@ Other site-wide settings include:
 
 Markpub uses Jiinja2 web templates and a small CSS file when building the static website. Website themes are provided by [Markpub-Themes](https://test.pypi.org/project/markpub-themes/), a separate Python package. This allows the latest version of the default theme to be used when the website is built.
 
-Custom themes can be specified in two ways.  
-1. Adding a "theme:" key, whose value is the theme directory name, e.g. "dolce" to `.markpub/markpub.yaml`, and installing the theme files in the `.markpub/themes` directory.  
-2. Update the `build` command in `netlify.toml` or `.github/workflows/release.yml` to include the "-t" or "--theme" option.
+Information on changing the default theme, or installing one of the themes for customization is available from that package:  
+```shell
+markpub-themes -h
+```
+
+A custom themes is specified by adding a "theme:" key, whose value is the theme directory name, e.g. "dolce" to `.markpub/markpub.yaml`, and installing the theme files in the `.markpub/themes` directory.  
+
+
+
