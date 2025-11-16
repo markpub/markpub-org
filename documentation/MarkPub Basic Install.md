@@ -11,15 +11,19 @@ NOTE: these instructions have only been tested on macOS systems.
 These steps assume the name of the directory or folder is “myDocumentCollection”.  
 
 **Install `markpub`**:  
+- Open or start a Terminal app or program.
+- At the terminal prompt, enter:  
 ```shell
-pip install markpub
+pip3 install markpub
 ```
 
 **Initialize the document collection**:
-This step sets up the `markpub` configuration file, and installs Python and Node files, needed to build a website.  
+This step sets up the `markpub` configuration file, and installs Python and Node files needed to build a website.  
 ```shell
 markpub init /full/path/to/myDocumentCollection
 ```
+
+Note: initialization must be run from a directory outside the document collection directory.  
 
 MarkPub initialization issues terminal prompts for:  
 
@@ -35,7 +39,7 @@ cd /full/path/to/myDocumentCollection/.markpub
 markpub build -i .. -o ./output
 ```  
 
-When the build completes, the web-site can be viewed using the following commands:  
+When the build completes, the web-site can be viewed with the following commands:  
 ```shell
 cd ./output
 python -m http.server
