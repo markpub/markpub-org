@@ -39,8 +39,9 @@ jobs:
         markpub build -i .. -o ../output -r /markpub-org --lunr --commits
 
     - name: add a nojekyll file
-      run: touch $GITHUB_WORKSPACE/output/.nojekyll
-      run: touch ./output/.nojekyll      
+      run: |
+        touch $GITHUB_WORKSPACE/output/.nojekyll
+        touch ./output/.nojekyll      
       
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
