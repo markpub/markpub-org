@@ -1,0 +1,1 @@
+lunr_posts= [{'link': '/The_Massive_Wiki_project.html', 'title': 'The Massive Wiki project'}, {'link': '/README.html', 'title': 'README'}, {'link': '/documentation/MarkPub_Basic_Install.html', 'title': 'MarkPub Basic Install'}, {'link': '/documentation/MarkPub_Install_and_Web-publish_Steps.html', 'title': 'MarkPub Install and Web-publish Steps'}]

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkPub Install and Web-publish Steps - MarkPub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS replaced with custom utility classes in style.css -->
+    <link rel="stylesheet" href="/markpub-org/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/markpub-org/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/markpub-org/lunr-index-1763385936.3685515.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/markpub-org/lunr-posts-1763385936.3685515.js"></script>
+    <script> function randomPageLink() { return "/markpub-org"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+    
+  </head>
+<body class="font-roboto text-gray-800 bg-gray-50 leading-relaxed">
+  <!-- Header -->
+  <header id="header" class="bg-gradient-to-r from-blue-500 to-blue-600 border-b-2 border-blue-700 px-4 py-3 sm:px-6">
+    <div class="flex items-center">
+      <button id="hamburger-btn" class="hidden text-white text-2xl mr-3 hover:text-blue-100 transition-colors" aria-label="Toggle menu">
+        &#9776;
+      </button>
+      <a id="header-link" href="/markpub-org/index.html" 
+         class="text-white text-2xl font-light font-roboto uppercase tracking-wide hover:text-blue-100 transition-colors no-underline">
+        MarkPub
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div id="flex-container" class="flex max-w-full px-4 sm:px-6 lg:px-8">
+    <!-- Sidebar -->
+    <aside id="side-column" class="bg-white min-w-48 max-h-[80vh] p-5 mr-4 overflow-y-auto border-r border-gray-300 shadow-sm">
+      <div class="mb-4">
+        <button id="hide-btn" class="px-3 py-1 text-xs uppercase tracking-wider font-trebuchet bg-blue-100 text-gray-700 border border-blue-200 rounded-md hover:bg-blue-200 transition-colors mr-2">
+          Hide
+        </button>
+        <button id="move-btn" class="hidden px-3 py-1 text-xs uppercase tracking-wider font-trebuchet bg-blue-100 text-gray-700 border border-blue-200 rounded-md hover:bg-blue-200 transition-colors">
+          Move to Sidebar
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/markpub-org/README.html">HOME</a></li>
+<li><a href="/markpub-org/search.html">SEARCH</a></li>
+<li><a href="/markpub-org/all-pages.html">ALL PAGES</a></li>
+<li><a href="/markpub-org/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-column" class="max-w-3xl bg-white px-5 py-0 pb-5 flex-grow ml-8 shadow-sm rounded-lg">
+      
+      <div class="flex justify-end mb-4 pt-4">
+        <a target="_blank" href="https://github.com/markpub/markpub-org/edit/main/documentation/MarkPub Install and Web-publish Steps.md" 
+           class="inline-block px-3 py-1 bg-blue-100 border border-blue-200 text-gray-700 text-sm font-trebuchet rounded-lg hover:bg-blue-200 transition-colors no-underline">
+          Edit on GitHub
+        </a>
+      </div>
+      
+      
+      <div class="prose prose-gray max-w-none">
+        <h1>MarkPub Install and Web-publish Steps</h1>
+<p>MarkPub generates HTML files from Markdown files. It is a <a href="https://en.wikipedia.org/wiki/Static_site_generator">static site generator</a>.</p>
+<p>MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub or Netlify when files are updated.</p>
+<p>The following instructions yield a static website published via GitHub Pages.</p>
+<h3>Assumptions and pre-requisites</h3>
+<p>These instructions assume the following:</p>
+<ul>
+<li>The primary goal is to build a static website from a collection of Markdown files, and to publish that site on the web.</li>
+<li>The Markdown documents are in an existing GitHub repository.</li>
+<li>Web publishing is hosted by GitHub Pages (or Netlify, see below).</li>
+</ul>
+<h3>Prerequisites for installation</h3>
+<ul>
+<li>Python3 3.12 or higher installed.</li>
+<li>Comfort using command-line or Terminal applications.</li>
+<li>Basic GitHub knowledge (repository management).</li>
+<li>GitHub Pages deployment experience, or</li>
+<li>Can get assistance with GitHub/GitHub Pages.</li>
+</ul>
+<h2>Basic installation and use</h2>
+<p>Assuming the local folder name, and the GitHub repository name of the Markdown collection, is "myDocumentCollection" these commands initialize and web-publish those documents to a GitHub Pages hosted website.</p>
+<p><strong>Install MarkPub</strong>:</p>
+<pre><code class="language-shell">cd /to/some/work/directory
+pip install markpub
+</code></pre>
+<p>Note: initialization must be run from a directory outside the document collection directory.</p>
+<p><strong>Initialize the document collection</strong>:</p>
+<p>Note: prior to initialization, the <code>myDocumentCollection</code> folder must be a local copy (“clone”) of an existing GitHub repository.</p>
+<pre><code class="language-shell">markpub init /full/path/to/myDocumentCollection
+</code></pre>
+<p>MarkPub initialization requests input for:</p>
+<ul>
+<li>Website title: "My Document Collection"</li>
+<li>Author: "Your name or names"</li>
+<li>Git repo: github.com/YourGitHubAccountName/myDocumentCollection</li>
+</ul>
+<p><strong>Web-publish the collection as a GitHub Pages website</strong></p>
+<pre><code class="language-shell">cd /full/path/to/myDocumentCollection
+git commit -am "MarkPub installation updates"
+git push
+</code></pre>
+<p>Log into GitHub, and for this repository's "Pages" settings, set "Build and deployment" "Branch" to "gh-pages" in the drop-down menu, and select "Save".</p>
+<ul>
+<li>Saving that setting triggers a "pages build and deployment" workflow under the "Actions" tab</li>
+<li>Select the repository's "Actions" tab;</li>
+<li>when the "pages build and deployment" workflow is finished (shows a green checkmark) select that workflow;</li>
+<li>from the "pages-build-deployment" graph select the green checkmark "deploy" link to see the deployed website.</li>
+<li>when completed the website is available at:<br />
+<a href="https://YourGitHubAccountName.github.io/myDocumentCollection">https://YourGitHubAccountName.github.io/myDocumentCollection</a></li>
+</ul>
+<p><strong>Web-publish using Netlify</strong></p>
+<p>For Netlify deployment, MarkPub installs a <code>netlify.toml</code> configuration file during initialization. You can use this to web-publish your site using <a href="https://netlify.app">Netlify</a>, instead of GitHub Pages. From your Netlify dashboard, select "Add new site" and "Import an existing project". Netlify will load the repository and run MarkPub automatically.</p>
+<h3>Configuration  options</h3>
+<p>Some website configuration details are specified in a separate file, <code>markpub.yaml</code>. For these instructions the file has this name:  <code>myDocumentCollection/.markpub/markpub.yaml</code></p>
+<p>Edit this file to set or change:</p>
+<ul>
+<li>Site title</li>
+<li>Author names</li>
+<li>License</li>
+<li>Number of recently changed pages to show</li>
+<li>Git forge information</li>
+</ul>
+<p>Other site-wide settings include:</p>
+<ul>
+<li>name of the Markdown page used as the website sidebar</li>
+<li>theme: name of a directory of website HTML, CSS, and JS files to use</li>
+<li>list of Markdown pages that do not have Edit buttons</li>
+<li>list of directories in the repository that will not appear on the website</li>
+</ul>
+<h3>Website themes</h3>
+<p>Markpub uses Jiinja2 web templates and a small CSS file when building the static website. Website themes are provided by <a href="https://test.pypi.org/project/markpub-themes/">Markpub-Themes</a>, a separate Python package. This allows the latest version of the default theme to be used when the website is built.</p>
+<p>Information on changing the default theme, or installing one of the themes for customization is available from that package:</p>
+<pre><code class="language-shell">markpub-themes -h
+</code></pre>
+<p>A custom themes is specified by adding a "theme:" key, whose value is the theme directory name, e.g. "dolce" to <code>.markpub/markpub.yaml</code>, and installing the theme files in the <code>.markpub/themes</code> directory.</p>
+
+      </div>
+      
+      
+    </main>
+  </div>
+  <script src="/markpub-org/markpub_static/js/script.js"></script>
+  
+  <footer class="bg-gray-100 py-8 mt-12">
+  <div class="text-center text-gray-600 space-y-2">
+    
+    <div><strong class="font-semibold text-gray-800">MarkPub</strong> by Bill Anderson, Peter Kaminski.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/markpub/markpub-org">markpub-org</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div class="text-sm italic">Site last updated on Monday, November 17, 2025 at 13:25 UTC.</div>
+  </div>
+</footer>
+</body>
+</html>
