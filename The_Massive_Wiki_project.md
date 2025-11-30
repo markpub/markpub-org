@@ -1,6 +1,6 @@
 # The Massive Wiki project  
 
-The Massive Wiki project originated with Peter Kaminski in 2019(? earlier ?). The primary aims of this project are described in The Massive Wiki Manifesto written around the same time:  
+The Massive Wiki project originated with Peter Kaminski in 2019 (maybe earlier). The primary aims of this project are described in The Massive Wiki Manifesto written around the same time:  
 
 ## The Massive Wiki Manifesto
 

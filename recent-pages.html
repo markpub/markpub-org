@@ -11,26 +11,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS replaced with custom utility classes in style.css -->
     <link rel="stylesheet" href="/markpub-org/markpub_static/css/style.css">
-    <link rel="stylesheet" href="/markpub-org/markpub_static/css/forte.css">
     <link rel="stylesheet" href="/markpub-org/markpub_static/css/custom.css">
     <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/markpub-org/lunr-index-1764540704.1178844.js"></script>
+    <script src="/markpub-org/lunr-index-1764541752.370298.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/markpub-org/lunr-posts-1764540704.1178844.js"></script>
+    <script src="/markpub-org/lunr-posts-1764541752.370298.js"></script>
     <script> function randomPageLink() { return "/markpub-org"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
 <body class="font-roboto text-gray-800 bg-gray-50 leading-relaxed">
   <!-- Header -->
-    <div id="header">
-    <span id="hamburger-btn"
-    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/markpub-org/index.html" style="color: black;">MarkPub</a>
-  </div>
+    <header id="header" class="bg-gradient-to-r from-blue-500 to-blue-600 border-b-2 border-blue-700 px-4 py-3 sm:px-6">
+    <div class="flex items-center">
+      <button id="hamburger-btn" class="hidden text-white text-2xl mr-3 hover:text-blue-100 transition-colors" aria-label="Toggle menu">
+        &#9776;
+      </button>
+      <a id="header-link" href="/markpub-org/index.html" 
+         class="text-white text-2xl font-light font-roboto uppercase tracking-wide hover:text-blue-100 transition-colors no-underline">
+        MarkPub
+      </a>
+    </div>
+  </header>
 
   <!-- Main Container -->
   <div id="flex-container" class="flex max-w-full px-4 sm:px-6 lg:px-8">
@@ -66,6 +73,19 @@
     <!-- Main Content -->
     <main id="main-column" class="max-w-3xl bg-white px-5 py-5 pb-5 flex-grow ml-8 shadow-sm rounded-lg">
       <h1 class="text-2xl font-trebuchet font-semibold text-gray-800 mb-6">Recent new and updated pages</h1>
+      
+      <div class="mb-6">
+        <div class="mb-2">
+          <a href="/markpub-org/The_Massive_Wiki_project.html" class="text-blue-600 hover:text-blue-800 transition-colors font-medium">The Massive Wiki project</a>
+        </div>
+        
+        <div>
+          <blockquote class="recent-changes-page-abstract text-gray-600 italic border-l-4 border-blue-200 pl-4">
+            The Massive Wiki project originated with Peter Kaminski in 2019 (maybe earlier). The primary aims of this project are described in The Massive Wiki Manifesto written around the same time: Massive Wiki is a movement to create a wiki *ecosystem* (rather [...]
+          </blockquote>
+        </div>
+        
+      </div>
       
       <div class="mb-6">
         <div class="mb-2">
@@ -106,23 +126,10 @@
         
       </div>
       
-      <div class="mb-6">
-        <div class="mb-2">
-          <a href="/markpub-org/The_Massive_Wiki_project.html" class="text-blue-600 hover:text-blue-800 transition-colors font-medium">The Massive Wiki project</a>
-        </div>
-        
-        <div>
-          <blockquote class="recent-changes-page-abstract text-gray-600 italic border-l-4 border-blue-200 pl-4">
-            The Massive Wiki project originated with Peter Kaminski in 2019(? earlier ?). The primary aims of this project are described in The Massive Wiki Manifesto written around the same time: Massive Wiki is a movement to create a wiki *ecosystem* (rather [...]
-          </blockquote>
-        </div>
-        
-      </div>
-      
     </main>
   </div>
 <footer class="bg-gray-100 py-8 mt-12">
-  <div class="text-center text-gray-600 space-y-1">
+  <div class="text-center text-gray-600 space-y-2">
     
     <div><strong class="font-semibold text-gray-800">MarkPub</strong> by Bill Anderson, Peter Kaminski.</div>
     
@@ -132,7 +139,7 @@
     
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
     
-    <div class="text-sm italic">Site last updated on Sunday, November 30, 2025 at 22:11 UTC.</div>
+    <div class="text-sm italic">Site last updated on Sunday, November 30, 2025 at 22:29 UTC.</div>
   </div>
 </footer>
 <script src="/markpub-org/markpub_static/js/script.js"></script>
