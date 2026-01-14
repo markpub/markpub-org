@@ -12,7 +12,7 @@ These instructions assume the following:
 
 - The primary goal is to build a static website from a collection of Markdown files, and to publish that site on the web.
 - The Markdown documents are in an existing GitHub repository.  
-- Web publishing is hosted by GitHub Pages (or Netlify, see below).
+- Web publishing is hosted by GitHub Pages (or Netlify or Cloudflare Pages, see below).
 
 ### Prerequisites for installation
 
