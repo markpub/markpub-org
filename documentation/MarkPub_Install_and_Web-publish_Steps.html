@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/markpub-org/lunr-index-1764541752.370298.js"></script>
+    <script src="/markpub-org/lunr-index-1768364098.3017304.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/markpub-org/lunr-posts-1764541752.370298.js"></script>
+    <script src="/markpub-org/lunr-posts-1768364098.3017304.js"></script>
     <script> function randomPageLink() { return "/markpub-org"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -86,7 +86,7 @@
       <div class="prose prose-gray max-w-none">
         <h1>MarkPub Install and Web-publish Steps</h1>
 <p>MarkPub generates HTML files from Markdown files. It is a <a href="https://en.wikipedia.org/wiki/Static_site_generator">static site generator</a>.</p>
-<p>MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub or Netlify when files are updated.</p>
+<p>MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub, Netlify, or Cloudflare Pages when files are updated.</p>
 <p>The following instructions yield a static website published via GitHub Pages.</p>
 <h3>Assumptions and pre-requisites</h3>
 <p>These instructions assume the following:</p>
@@ -136,6 +136,16 @@ git push
 </ul>
 <p><strong>Web-publish using Netlify</strong></p>
 <p>For Netlify deployment, MarkPub installs a <code>netlify.toml</code> configuration file during initialization. You can use this to web-publish your site using <a href="https://netlify.app">Netlify</a>, instead of GitHub Pages. From your Netlify dashboard, select "Add new site" and "Import an existing project". Netlify will load the repository and run MarkPub automatically.</p>
+<p><strong>Web-publish using Cloudflare Pages</strong></p>
+<p>For Cloudflare Pages deployment, go to your <a href="https://dash.cloudflare.com/">Cloudflare dashboard</a> Account home. Click <strong>Create application</strong> → "Looking to deploy Pages? <strong>Get started</strong>" → <strong>Import an existing Git repository</strong> Get Started. Authorize Cloudflare to access your GitHub account and desired repo. Configure settings:</p>
+<ul>
+<li>Framework preset: <code>none</code></li>
+<li>Build command: <code>pip install -r requirements.txt &amp;&amp; markpub build -i .. -o ./output --lunr --commits</code></li>
+<li>Build output directory: <code>output</code></li>
+<li>Root directory (advanced) Path: <code>.markpub</code></li>
+<li>Click "Save and Deploy"</li>
+</ul>
+<p>Note: Do not use a <code>wrangler.toml</code> file -- that's meant for Worker deploys.</p>
 <h3>Configuration  options</h3>
 <p>Some website configuration details are specified in a separate file, <code>markpub.yaml</code>. For these instructions the file has this name:  <code>myDocumentCollection/.markpub/markpub.yaml</code></p>
 <p>Edit this file to set or change:</p>
@@ -178,7 +188,7 @@ git push
     
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
     
-    <div class="text-sm italic">Site last updated on Sunday, November 30, 2025 at 22:29 UTC.</div>
+    <div class="text-sm italic">Site last updated on Wednesday, January 14, 2026 at 04:14 UTC.</div>
   </div>
 </footer>
 </body>
