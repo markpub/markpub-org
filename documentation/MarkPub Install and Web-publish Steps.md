@@ -2,7 +2,7 @@
 
 MarkPub generates HTML files from Markdown files. It is a [static site generator](https://en.wikipedia.org/wiki/Static_site_generator).
 
-MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub or Netlify when files are updated.
+MarkPub helps publish the HTML files to the web by installing automation files for GitHub Pages and Netlify. When you enable the automation, the site is regenerated automatically by GitHub, Netlify, or Cloudflare Pages when files are updated.
 
 The following instructions yield a static website published via GitHub Pages.
 
@@ -70,6 +70,18 @@ Log into GitHub, and for this repository's "Pages" settings, set "Build and depl
 
 For Netlify deployment, MarkPub installs a `netlify.toml` configuration file during initialization. You can use this to web-publish your site using [Netlify](https://netlify.app), instead of GitHub Pages. From your Netlify dashboard, select "Add new site" and "Import an existing project". Netlify will load the repository and run MarkPub automatically.
   
+**Web-publish using Cloudflare Pages**
+
+For Cloudflare Pages deployment, go to your [Cloudflare dashboard](https://dash.cloudflare.com/) Account home. Click **Create application** → "Looking to deploy Pages? **Get started**" → **Import an existing Git repository** Get Started. Authorize Cloudflare to access your GitHub account and desired repo. Configure settings:
+
+- Framework preset: `none`
+- Build command: `pip install -r requirements.txt && markpub build -i .. -o ./output --lunr --commits`
+- Build output directory: `output`
+- Root directory (advanced) Path: `.markpub`
+- Click "Save and Deploy"
+
+Note: Do not use a `wrangler.toml` file -- that's meant for Worker deploys.
+
 ### Configuration  options
 
 Some website configuration details are specified in a separate file, `markpub.yaml`. For these instructions the file has this name:  `myDocumentCollection/.markpub/markpub.yaml`  
