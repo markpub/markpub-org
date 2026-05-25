@@ -68,3 +68,5 @@ The Massive Wiki project is exploring ways to interact with and participate in t
 
 One current project in development is to support posting Markpub website links on Bluesky and Mastodon instances, and have replies and reactions to such posts displayed as comments to the posted webpage.  
 
+-----
+More information about [Massive Wikis.](https://massive-wiki.github.io/massive-wiki/)  
