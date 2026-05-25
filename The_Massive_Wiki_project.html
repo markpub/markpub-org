@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/markpub-org/lunr-index-1768364135.480289.js"></script>
+    <script src="/markpub-org/lunr-index-1779738775.4335718.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/markpub-org/lunr-posts-1768364135.480289.js"></script>
+    <script src="/markpub-org/lunr-posts-1779738775.4335718.js"></script>
     <script> function randomPageLink() { return "/markpub-org"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -88,28 +88,42 @@
 <p>The Massive Wiki project originated with Peter Kaminski in 2019 (maybe earlier). The primary aims of this project are described in The Massive Wiki Manifesto written around the same time:</p>
 <h2>The Massive Wiki Manifesto</h2>
 <p>Massive Wiki is a movement to create a wiki <em>ecosystem</em> (rather than just an engine) that provides classic wiki utility, with a plurality of tools and processes that enable decentralization and federation of the pages.</p>
-<p>Wikis are made of pages. Free the pages to go where they need to go!</p>
+<p>Wikis are made of pages. The word "Wiki" represents naming and easy linking between pages, as well as the wiki practice and culture of collaborative writing. Free the pages to go where they need to go!</p>
 <p>It is not just a wiki - it is a <strong>Massive Wiki</strong>.</p>
 <p>The name, "Massive Wiki", is inspired by <strong>Ma</strong> rkdown, <strong>S</strong> hared, <strong>V</strong> ersioned, <strong>F</strong> iles (MASVF and pronounced “massive”).</p>
-<h3>Markdown</h3>
+<h4>Markdown</h4>
 <p>We use Markdown because it is a lingua franca.</p>
-<h3>Shared</h3>
+<h4>Shared</h4>
 <p>Wiki is best when it is shared with others.  Sharing files lets them move around, from centralized servers to decentralized servers, and from peer to peer.</p>
-<h3>Versioned</h3>
-<p>When page changes overwrite one another (“collide”), version history is important and useful to enable whatever manual merge is necessary.</p>
-<p>Version history is also just really useful.</p>
-<h3>Files</h3>
+<h4>Versioned</h4>
+<p>When page changes overwrite one another (“collide”), version history is important and useful to enable whatever manual merge is necessary.<br />
+Version history is also just really useful.</p>
+<h4>Files</h4>
 <p>Each page is one file.</p>
-<p>Standard files are an easy and reasonably precise unit of data interchange between different systems.</p>
+<p>Standard files are an easy to use unit of data interchange between different systems.</p>
 <p>The plural "files" is important -- a wiki needs more than one page.</p>
-<h2>Massive Wiki Affordances</h2>
-<p>A Massive Wiki is a good home for individual contributors and for a community of participants. A Massive Wiki has the following properties.</p>
-<ol>
-<li><strong>Accessible</strong> to many authors. Massive Wiki can be set up as a folder of text files on an authors' computer that are as easy to edit or rearrange as any other text files on their computer. You can add authors by just asking them to use text files on their computer.</li>
-<li><strong>Simple syntax</strong>: Markdown is easy to learn, and is a low barrier for participation.</li>
-<li><strong>Decentralized</strong>: Massive Wiki is built to diffuse information across space and time, unlike a centralized server-based wiki or website. Each author has a copy of the whole wiki, in text format. For public wikis, there is also a copy on GitHub, or another public Git forge. Anyone can archive it, share it, duplicate, and change it, without any infrastructure besides their computer (or even another simpler computing device, like a tablet or a USB thumb hard drive). You can zip up (compress) the whole thing easily, and email the zipped-up thing to a million friends for safekeeping or further distribution. And any recipient who can receive email and unzip a file will have the whole wiki. It is much more likely to survive for decades or centuries, even if centralized networking and computing infrastructure collapses. (Maybe this is of value to you, maybe it is not. :-) )</li>
-<li><strong>Inexpensive</strong>: No monthly (centralized) server cost.</li>
-</ol>
+<h2>Features and Benefits</h2>
+<p>A Massive Wiki is a good platform for local, community centered information. It supports individual authors, contributors, and a community of participants. The text format for wiki pages is easy to learn, and a low bar to participation. Massive Wikis are decentralized; each author and contributor has a copy of the whole wiki, in text format. And Massive Wikis are inexpensive to run.</p>
+<h3>Wiki Functionality</h3>
+<p>Massive Wiki inherits some key features from the Wiki Wiki Web pattern invented by Ward Cunningham in 1994, including easy <strong>linking</strong> and <strong>named pages.</strong> The Wiki pattern is one of the best ways to organize and share text-based information and knowledge. We gratefully acknowledge Ward's gift to the world.</p>
+<h3>Accessibility and Ease of Participation</h3>
+<p>Massive Wiki can be set up to be just a folder of text files on your authors' computer, that are as easy to edit or rearrange as any other text files on their computer. You can add authors by just asking them to create and contribute text files on their computer.</p>
+<p>The plain text format used by Massive Wiki works with any standard operating system or computer interface device, including speech-based and legacy computers.</p>
+<h3>Decentralization</h3>
+<p>Massive Wiki is built to diffuse information across space and time, unlike a centralized server-based wiki or website. Each author has a copy of the whole wiki, in text format. For public wikis, there is also a copy on GitHub or another public Git forge.</p>
+<p>Anyone can archive it, share it, duplicate and change it, without any infrastructure besides their computing device—for example, a laptop, smartphone, or a tablet.</p>
+<p>You can zip up the whole wiki and email the zipped-up wiki to a million friends for safekeeping or further distribution. Any recipient who can receive email and unzip a file will have the whole wiki.</p>
+<h2>Massive Wiki Work Patterns</h2>
+<p>In the Massive Wiki world, a wiki is a set of text files, stored on your computer, on other people's computers, and, optionally, stored in a "git forge" (a database hub, such as GitHub), and, perhaps, published on a website. There are many editing, viewing, and collaborating patterns that are enabled by this layout, including:</p>
+<ul>
+<li>The publisher edits; the public views as a website; no collaboration.</li>
+<li>The publisher edits; anyone can download a single file or all the files, anyone can edit their copy and submit it back to the publisher.</li>
+<li>A small team collaborates on the text files using peer-to-peer file synchronization software, such as <code>syncthing</code>, or shared drives. The wiki may or may not be published to others.</li>
+<li>There are multiple publishers, each with possibly different edits. Maybe there is a hub-and-spoke publication of a wiki?</li>
+</ul>
+<p>In any of these models, the publisher might be a single person, or a team of people acting as a single entity. The publisher ensures the wiki is published, and manages collaboration and publishing updates.<br />
+Pro tip: Showing gratitude to the publishers in your community helps them keep publishing.</p>
+<p>For more about wiki patterns, some technology details, and IP practices, cf. <span class="incipient-wikilink">The Massive Wiki Pattern</span></p>
 <h2>Massive Wiki Publication</h2>
 <p>The Massive Wiki project also provides an open-source Python package, <a href="https://pypi.org/project/markpub/">Markpub</a>, that renders any collection of Markdown files, such as a Massive Wiki, as a static website. The website can be hosted by <a href="https://netlify.app">Netfilfy</a> or as a <a href="https://pages.github.com/">GitHub Pages</a> website.</p>
 <h2>Massive Wiki and the decentralized web</h2>
@@ -144,7 +158,7 @@
     
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
     
-    <div class="text-sm italic">Site last updated on Wednesday, January 14, 2026 at 04:15 UTC.</div>
+    <div class="text-sm italic">Site last updated on Monday, May 25, 2026 at 19:52 UTC.</div>
   </div>
 </footer>
 </body>
