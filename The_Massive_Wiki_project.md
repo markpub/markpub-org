@@ -60,7 +60,7 @@ For more about wiki patterns, some technology details, and IP practices, cf. [[T
 
 ## Massive Wiki Publication  
 
-The Massive Wiki project also provides an open-source Python package, [Markpub](https://pypi.org/project/markpub/ ), that renders any collection of Markdown files, such as a Massive Wiki, as a static website. The website can be hosted by [Netfilfy](https://netlify.app) or as a [GitHub Pages](https://pages.github.com/) website.  
+The Massive Wiki project also provides an open-source Python package, [Markpub](https://pypi.org/project/markpub/ ), that renders any collection of Markdown files, such as a Massive Wiki, as a static website. The website can be hosted by [Netlify](https://netlify.app) or as a [GitHub Pages](https://pages.github.com/) website.  
 
 ## Massive Wiki and the decentralized web  
 
