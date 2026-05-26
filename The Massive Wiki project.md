@@ -56,7 +56,7 @@ In the Massive Wiki world, a wiki is a set of text files, stored on your compute
 In any of these models, the publisher might be a single person, or a team of people acting as a single entity. The publisher ensures the wiki is published, and manages collaboration and publishing updates.  
 Pro tip: Showing gratitude to the publishers in your community helps them keep publishing.  
 
-For more about wiki patterns, some technology details, and IP practices, cf. [[The Massive Wiki Pattern]]  
+For more about wiki patterns, some technology details, and IP practices, cf. [The Massive Wiki Pattern](https://massive-wiki.github.io/massive-wiki/documentationWorkbench/The_Massive_Wiki_Pattern.html)    
 
 ## Massive Wiki Publication  
 
